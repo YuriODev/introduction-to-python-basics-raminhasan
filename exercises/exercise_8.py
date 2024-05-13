@@ -8,4 +8,5 @@ for i in range(3):
 
 array.sort()
 
-print(array)
+for x in range(3):
+  print(array[x])
