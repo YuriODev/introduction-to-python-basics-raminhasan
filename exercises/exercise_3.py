@@ -1,6 +1,7 @@
 # Exercise 3
 
 n = int(input('enter a number of seconds: '))
+m = True
 
 hours = n // 3600
 minutes = (n % 3600) // 60
