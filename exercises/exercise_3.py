@@ -11,8 +11,5 @@ if seconds < 10:
   
 if minutes < 10:
   minutes = f"0{minutes}"
-  
-if hours < 10:
-  hours = f"0{hours}"
 
 print(f"{n} equates to {hours}:{minutes}:{seconds}")
