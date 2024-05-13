@@ -3,7 +3,7 @@
 n = int(input('enter a number of seconds: '))
 m = True
 
-hours = n // 3600
+hours = (n // 3600) % 24
 minutes = (n % 3600) // 60
 seconds = (n % 3600) % 60
 
