@@ -1,2 +1,11 @@
 # Exercise 8
-# Your solution comes here
+
+array = []
+
+for i in range(3):
+  item = int(input("Enter a number: "))
+  array.append(item)
+
+array.sort()
+
+print(array)
