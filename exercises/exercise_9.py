@@ -14,4 +14,4 @@ rotations_seconds = s *  (1/120)
 
 total_rots = rotations_hours + rotations_minutes + rotations_seconds
 
-print(total_rots)
+print(total_rots // 1)
