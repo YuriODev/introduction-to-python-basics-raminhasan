@@ -1,13 +1,11 @@
 # Exercise 8
 
-item = input("Enter a number: ")
+item_one = input("Enter a number: ")
+item_two = input("Enter a number: ")
+item_three = input("Enter a number: ")
 
-for i in range(3):
-  array.append(item)
+min = item_one * (item_one <= item_two and item_one <= item_three) or item_two * (item_two <= item_one and item_two <= item_three) or item_three * (item_three <= item_one and item_three <= item_two)
+mid = item_one * ((item_one >= item_two and item_one <= item_three) or (item_one >= item_three and item_one <= item_two)) or item_two * ((item_two >= item_one and item_two <= item_three) or (item_two >= item_three and item_two <= item_three)) or item_three * ((item_three >= item_two and item_three <= item_one) or (item_three >= item_one and item_three <= item_two))
+max = item_one * (item_one >= item_two and item_one >= item_three) or item_two * (item_two >= item_one and item_two >= item_three) or item_three * (item_three >= item_one and item_three >= item_two)
 
-array.sort()
-
-for x in range(3):
-  print(array[x])
-
-print(array)
+print(f'{min}\n{mid}\n{max}')
