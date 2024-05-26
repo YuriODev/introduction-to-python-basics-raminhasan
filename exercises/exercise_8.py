@@ -8,4 +8,4 @@ min = item_one * (item_one <= item_two and item_one <= item_three) + item_two * 
 mid = item_one * ((item_one >= item_two and item_one <= item_three) + (item_one >= item_three and item_one <= item_two)) + item_two * ((item_two >= item_one and item_two <= item_three) + (item_two >= item_three and item_two <= item_three)) + item_three * ((item_three >= item_two and item_three <= item_one) + (item_three >= item_one and item_three <= item_two))
 max = item_one * (item_one >= item_two and item_one >= item_three) + item_two * (item_two >= item_one and item_two >= item_three) + item_three * (item_three >= item_one and item_three >= item_two)
 
-print(f'{min}\n{mid}\n{max}')
+print(f'{min}, {mid}, {max}')
